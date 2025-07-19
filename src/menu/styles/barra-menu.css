@@ -1,0 +1,14 @@
+.contenedor-barra-menu{
+    width: 20%;
+    height: 100vh;
+    background-color: var(--color-primero);
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-barra-menu .enlace{
+    margin: auto;
+    width: 100%;
+    color: white;
+    text-align: center;
+}

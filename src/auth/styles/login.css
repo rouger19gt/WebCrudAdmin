@@ -1,0 +1,43 @@
+.contenedor-login{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-tercero);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-centro-login{
+    width: 30%;
+    height: 80vh;
+    background-color: var(--color-primero);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-centro-login h1{
+    text-align: center;
+    color: white;
+}
+
+.contenedor-centro-login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 90%;
+    padding: 5%;
+}
+
+.contenedor-centro-login label{
+    color: white;
+}
+
+.contenedor-centro-login input{
+    height: 30px;
+}
+
+.contenedor-centro-login form p{
+    color: rgb(202, 64, 64);
+}
