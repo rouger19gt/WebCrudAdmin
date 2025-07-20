@@ -7,7 +7,7 @@ const Menu = () => {
     return(
         <>
             <div className="contenedor-menu">
-                <h1>Hola, Bienvenido, usuario: {dataUsuario?.username}</h1>
+                <h1>Bienvenido: {dataUsuario?.username}</h1>
             </div>
         </>
     );

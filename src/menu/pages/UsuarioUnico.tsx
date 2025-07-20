@@ -86,7 +86,7 @@ const UsuarioUnico = () => {
                     <input type="text" name="username" value={formData.username} onChange={handleChange} required />
                 </div>
                 {
-                    username === undefined &&
+                    (username === undefined && dataUsuario?.idPerfil === 1) &&
                         <div className="form-group">
                             <label>Contraseña:</label>
                             <input type="password" name="contrasenia" value={formData.contrasenia} onChange={handleChange} required />
@@ -134,7 +134,10 @@ const UsuarioUnico = () => {
                     </select>
                 </div>
 
-                <button type="submit" className="submit-button" onClick={(e) => handleSubmit(e)}>Guardar Usuario</button>
+                {
+                    dataUsuario?.idPerfil === 1 && 
+                    <button type="submit" className="submit-button" onClick={(e) => handleSubmit(e)}>Guardar Usuario</button>
+                }
             </form>
         </>
     )
